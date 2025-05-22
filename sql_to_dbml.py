@@ -24,6 +24,8 @@ Table posts {
 import sqlparse
 from sqlparse.sql import IdentifierList, Identifier, Token
 from sqlparse.tokens import Keyword, DML
+import os 
+import sys
 
 def parse_create_table(statement):
     lines = str(statement).splitlines()
